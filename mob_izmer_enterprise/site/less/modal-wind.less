@@ -1,0 +1,67 @@
+.overlay {
+	display: none;
+	position: fixed;
+	.size(100%,100%);
+	top: 0;
+	left: 0;
+	z-index: 9;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-window {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 11;
+	.translate(-50%,-50%);
+	background: #DF8A1F;
+	width: 425px;
+	max-height: 100%;
+	max-width: 100%;
+
+	h3 {
+		padding-top: 40px;
+		text-align: center;
+		font-size: 25px;
+		text-transform: uppercase;
+		color: #20232A;
+		font-weight: 400;
+	}
+
+	p {
+		padding-top: 20px;
+		text-align: center;
+		font-size: 14px;
+		color: #fff;
+	}
+
+	.main-form {
+		padding-bottom: 30px;
+		padding-top: 15px;
+
+		input {
+			margin: 0 auto 15px;
+
+			&.text-inp {
+				font-size: 18px;
+			}
+
+			&.cosultation-link {
+				line-height: 53px;
+				height: 53px;
+				width: 310px;
+				max-width: 100%;
+				font-size: 25px;
+				text-align: center;
+			}
+		}
+	}
+
+	.modal-close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		.iconko(32px,32px,311px,131px);
+	}
+}

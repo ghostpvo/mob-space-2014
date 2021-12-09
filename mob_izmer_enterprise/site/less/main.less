@@ -1,0 +1,40 @@
+@import "../fonts/myriadpro-light.css";
+@import "../fonts/myriadpro-regular_0.css";
+@import "../fonts/myriadpro-bold_0.css";
+@import "../fonts/MyriadProIt.css";
+@import "mixins";
+@import "resets";
+
+@main_clr: #20232A;
+@orange: #F49700;
+@light_crl: #F3F2F7;
+@light_f: 'MyriadProLight';
+@reg_f: 'MyriadProRegular';
+@bold_f: 'MyriadProBold';
+@it_f: 'MyriadProIt';
+@sprite_dir: '../img/sprite.png';
+
+body {
+	color: #000;
+	font-family: @reg_f;
+	background: @light_crl;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: @bold_f;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+@import "layout-old";
+@import "layout";
+@import "responsive";
+@import "modal-wind";
+@import "icons";

@@ -1,0 +1,154 @@
+@import "../fonts/myriadpro-light.css";
+@import "../fonts/myriadpro-regular_0.css";
+@import "../fonts/myriadpro-bold_0.css";
+@import "mixins";
+@import "resets";
+
+@main_clr: #20232A;
+@orange: #F49700;
+@light_crl: #F3F2F7;
+@light_f: 'MyriadProLight';
+@reg_f: 'MyriadProRegular';
+@bold_f: 'MyriadProBold';
+
+.dcr-header {
+	margin: 65px 0;
+	text-align: center;
+	text-transform: uppercase;
+	overflow: hidden;
+	h2 {
+		position: relative;
+		color: #fff;
+		font-family: @bold_f;
+		display: inline-block;
+
+		&:before {
+			position: absolute;
+			top: 50%;
+			margin-top: -7px;
+			left: -815px;
+			content: "";
+			width: 800px;
+			height: 15px;
+			background: url(../img/header-bg.png) right center repeat-x;
+		}
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			margin-top: -7px;
+			right: -815px;
+			content: "";
+			width: 800px;
+			height: 15px;
+			background: url(../img/header-bg.png) left center repeat-x;
+		}
+	}
+	&.alternative {
+		h2 {
+			color: #000;
+		}
+	}
+
+	&.alternative2 {
+		h2 {
+			background: #fff;
+			color: #000;
+		}
+	}
+}
+
+i {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.i-phone1 {
+	.size(38px,39px);
+	.sprite(-212px,-7px);
+}
+
+.i-windows {
+	.size(31px,39px);
+	.sprite(-8px,-113px);
+}
+
+.i-android {
+	.size(37px,43px);
+	.sprite(-60px,-113px);
+}
+
+.i-apple {
+	.size(37px,38px);
+	.sprite(-110px,-111px);
+}
+
+.orange-i {
+	.size(65px,65px);
+}
+
+.i-count-info {
+	.sprite(-145px,-333px);
+}
+
+.i-electro-payment {
+	.sprite(-74px,-333px);
+}
+
+.i-timer {
+	.sprite(-3px,-333px);
+}
+
+.i-design {
+	.sprite(-219px,-333px);
+}
+
+.i-phone {
+	.sprite(-292px,-333px);
+}
+
+.i-geochat {
+	.sprite(-436px,-260px);
+}
+
+.i-meet {
+	.sprite(-436px,-333px);
+}
+
+.i-2languages {
+	.sprite(-3px,-185px);
+}
+
+.i-aware-of {
+	.sprite(-74px,-185px);
+}
+
+.i-jams-situation {
+	.sprite(-150px,-185px);
+}
+
+.i-live-coments {
+	.sprite(-219px,-185px);
+}
+
+.i-shoes {
+	.sprite(-365px,-333px);
+}
+
+.i-connect {
+	.sprite(-365px,-260px);
+}
+
+.i-ios {
+	.sprite(-292px,-260px);
+}
+
+.i-rub {
+	.sprite(-219px,-260px);
+}
+
+.i-systems {
+	.sprite(-145px,-260px);
+}
+
+@import "layout";
